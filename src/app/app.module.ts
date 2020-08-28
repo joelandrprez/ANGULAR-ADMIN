@@ -10,13 +10,13 @@ import { AppComponent } from './app.component';
 
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
-import { ShareModule } from './shared/share.module'
-import { AuhtModule } from '../app/auth/auht.module'
+import { AuhtModule } from '../app/auth/auht.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NopagefoundComponent,
+    
     
   ],
   imports: [

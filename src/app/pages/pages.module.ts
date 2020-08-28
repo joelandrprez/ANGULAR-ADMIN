@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'
+import { FormsModule } from '@angular/forms'
+
+import { ChartsModule } from 'ng2-charts';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProgressComponent } from './progress/progress/progress.component';
-import { GraficaComponent } from './grafica1/grafica/grafica.component';
+import { ProgressComponent } from './progress/progress.component';
+import { GraficaComponent } from './grafica1/grafica.component';
 import { PagesComponent } from './pages.component';
 
 import { ShareModule } from '../shared/share.module'
-import { RouterModule } from '@angular/router'
 import { AuhtModule } from '../auth/auht.module';
-
+import { ComponentModule } from '../components/component.module';
 
 @NgModule({
   declarations: [
@@ -25,10 +28,15 @@ import { AuhtModule } from '../auth/auht.module';
     PagesComponent,
   ],
   imports: [
+    FormsModule,
+    
+    ChartsModule,
+    
     CommonModule,
     ShareModule,
     RouterModule,
-    AuhtModule
+    AuhtModule,
+    ComponentModule
   ]
 })
 export class PagesModule { }
