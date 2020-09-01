@@ -29,7 +29,6 @@ import { ComponentModule } from '../components/component.module';
   ],
   imports: [
     FormsModule,
-    
     ChartsModule,
     
     CommonModule,

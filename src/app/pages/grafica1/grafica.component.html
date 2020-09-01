@@ -1,18 +1,39 @@
 <div class="row">
-     
+  
+    
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h1>GRAFICA</h1>
+                    <div style="display: block">
+                        <canvas baseChart
+                          [data]="doughnutChartData"
+                          [labels]="doughnutChartLabels"
+                          [chartType]="doughnutChartType"
+                          [colors]="color"
+                          >
+                          
+                        </canvas>
+                    </div>
+            </div>
+        </div>
+    </div>
 
+    
 <div class="col-6">
     <div class="card">
         <app-dona></app-dona>
     </div>
 </div>
+
                 
 <div class="col-6">
     <div class="card">
         <app-dona
         titulo='prueba'
         [label]="labels1"
-        [colors]="data1">
+        [data]="data1"
+        [color]="color1">
 
         </app-dona>
     </div>
