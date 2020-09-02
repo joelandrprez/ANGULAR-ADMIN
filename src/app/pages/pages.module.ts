@@ -13,19 +13,22 @@ import { PagesComponent } from './pages.component';
 import { ShareModule } from '../shared/share.module'
 import { AuhtModule } from '../auth/auht.module';
 import { ComponentModule } from '../components/component.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
     DashboardComponent, 
     ProgressComponent,
     GraficaComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   exports:[
     DashboardComponent,
     ProgressComponent,
     GraficaComponent,
     PagesComponent,
+    AccountSettingsComponent
   ],
   imports: [
     FormsModule,
